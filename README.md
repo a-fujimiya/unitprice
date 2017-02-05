@@ -9,7 +9,7 @@ Calculate unit price from net weight and price.
 1. Use Parceler and Butterknife at the same time.
  How to describe Butterknife "annotationProcessor" on build.gradle.
 1. How to use PercentRelativeLayout.
-1. Prevent keyboard showing when tap on EditText.
+1. Prevent keyboard showing when tap on EditText field.
 
 ## No good
 1. MainActivity has data.
@@ -18,6 +18,6 @@ Calculate unit price from net weight and price.
 1. Calling public method of fragment from activity to display the updated value.
 1. I feel it depends too much on member variables.
 
-## known but ignoring
+## Known but ignoring
 1. Do not check number of digits of input value.
 1. Double tap the input field to select the character.
