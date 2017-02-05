@@ -132,6 +132,7 @@
       android:layout_height="@dimen/round_button_height"
       style="@style/round_button_normal"
       android:layout_toEndOf="@+id/button_6"
+      android:layout_above="@+id/button_0"
       android:layout_below="@+id/button_7"
       android:text="@string/clear_one"
       />

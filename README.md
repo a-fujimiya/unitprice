@@ -1,20 +1,23 @@
 # Unit Price
+Calculate unit price from net weight and price.
+
 内容量(Net)と値段(Price)から単価(UnitPrice)を求める。
 
-## 試したこと
-1. [Butterknife v8.4.0](http://jakewharton.github.io/butterknife/)の導入
-1. [Perceler v1.0.3](https://github.com/johncarl81/parceler)の導入
-1. Parcelerと併用する場合に build.gradleに Butterknifeの annotationProcessorをどう書くか
-1. PercentRelativeLayoutの使い方
-1. EditTextをタップした時にキーボードを表示させない方法
+## Try
+1. Introduce [Butterknife v8.4.0](http://jakewharton.github.io/butterknife/)
+1. Introduce [Perceler v1.0.3](https://github.com/johncarl81/parceler)
+1. Use Parceler and Butterknife at the same time.
+ How to describe Butterknife "annotationProcessor" on build.gradle.
+1. How to use PercentRelativeLayout.
+1. Prevent keyboard showing when tap on EditText.
 
-## 駄目なところ
-1. データを MainActivityが持っている
-1. 更新する値を区別する方法(どの値が focusを持っているかを activityに渡している)
-1. 更新する値を viewから拾っている
-1. 更新した値を表示するのに、activityから fragmentの publicメソッドをコールしている
-1. メンバ変数に頼り過ぎな気がする
+## No good
+1. MainActivity has data.
+1. How to distinguish update value in data.(Passing to activity what value has focus.)
+1. Get the value to be updated from the view.
+1. Calling public method of fragment from activity to display the updated value.
+1. I feel it depends too much on member variables.
 
-## 分かっているけど無視したところ
-1. 入力値の桁数チェック
-1. 入力欄をダブルタップすると文字が選択状態になる
+## known but ignoring
+1. Do not check number of digits of input value.
+1. Double tap the input field to select the character.
