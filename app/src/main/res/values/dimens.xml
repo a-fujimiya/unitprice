@@ -1,0 +1,21 @@
+<resources>
+  <!-- Default screen margins, per the Android Design guidelines. -->
+  <dimen name="activity_horizontal_margin">16dp</dimen>
+  <dimen name="activity_vertical_margin">16dp</dimen>
+  <item name="button_layout_margin_horizontal" type="dimen">1%</item>
+  <dimen name="button_layout_margin_vertical">8dp</dimen>
+  <dimen name="round_button_width">80dp</dimen>
+  <dimen name="round_button_height">64dp</dimen>
+  <dimen name="net_text_width">0dp</dimen>
+  <dimen name="price_text_width">88dp</dimen>
+  <dimen name="unit_price_width">88dp</dimen>
+  <dimen name="text_area_horizontal_margin">8dp</dimen>
+  <dimen name="text_area_vertical_margin">8dp</dimen>
+  <dimen name="text_area_horizontal_padding">4dp</dimen>
+  <dimen name="text_area_vertical_padding">8dp</dimen>
+  <dimen name="border_line_bottom_margin">8dp</dimen>
+  <item name="edit_area_percent" type="dimen">25%</item>
+  <item name="display_area_percent" type="dimen">50%</item>
+  <item name="button_width_percent" type="dimen">23%</item>
+  <item name="button_double_width_percent" type="dimen">48%</item>
+</resources>

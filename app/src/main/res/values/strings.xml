@@ -1,0 +1,20 @@
+<resources>
+  <string name="app_name">UnitPrice</string>
+  <string name="digit0">0</string>
+  <string name="digit1">1</string>
+  <string name="digit2">2</string>
+  <string name="digit3">3</string>
+  <string name="digit4">4</string>
+  <string name="digit5">5</string>
+  <string name="digit6">6</string>
+  <string name="digit7">7</string>
+  <string name="digit8">8</string>
+  <string name="digit9">9</string>
+  <string name="all_clear">AC</string>
+  <string name="clear_one">Del</string>
+  <string name="go">=</string>
+  <string name="divide_zero">Error</string>
+  <string name="net_title">Net Weight</string>
+  <string name="price_title">Price</string>
+  <string name="unit_price_title">Unit Price</string>
+</resources>
