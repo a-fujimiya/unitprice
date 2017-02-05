@@ -46,10 +46,7 @@ public class MainActivity extends AppCompatActivity
       clearLastOneDigit();
       setInputValue();
     } else if (num == ALL_CLEAR) {
-      unitPrices[0].setNet(BigDecimal.ZERO);
-      unitPrices[0].setPrice(BigDecimal.ZERO);
-      unitPrices[1].setNet(BigDecimal.ZERO);
-      unitPrices[1].setPrice(BigDecimal.ZERO);
+      clearAllData();
       calculateUnitPrice();
     } else if (num == CALCULATE) {
       calculateUnitPrice();
@@ -83,6 +80,14 @@ public class MainActivity extends AppCompatActivity
 
   private void clearLastOneDigit() {
     value = UnitPrice.deleteLastDigit(value);
+  }
+
+  private void clearAllData() {
+    unitPrices[0].setNet(BigDecimal.ZERO);
+    unitPrices[0].setPrice(BigDecimal.ZERO);
+    unitPrices[1].setNet(BigDecimal.ZERO);
+    unitPrices[1].setPrice(BigDecimal.ZERO);
+    value = BigDecimal.ZERO;
   }
 
   private void calculateUnitPrice() {

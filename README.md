@@ -12,7 +12,7 @@ Calculate unit price from net weight and price.
 1. Prevent keyboard showing when tap on EditText field.
 
 ## No good
-1. MainActivity has data.
+1. MainActivity has many data.
 1. How to distinguish update value in data.(Passing to activity what value has focus.)
 1. Get the value to be updated from the view.
 1. Calling public method of fragment from activity to display the updated value.
