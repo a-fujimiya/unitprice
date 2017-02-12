@@ -6,8 +6,6 @@ Calculate unit price from net weight and price.
 ## Try
 1. Introduce [Butterknife](http://jakewharton.github.io/butterknife/)
 1. Introduce [Perceler](https://github.com/johncarl81/parceler)
-1. Use Parceler and Butterknife at the same time.
- How to describe Butterknife "annotationProcessor" on build.gradle.
 1. How to use PercentRelativeLayout.
 1. Prevent keyboard showing when tap on EditText field.
 
