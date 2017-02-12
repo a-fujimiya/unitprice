@@ -39,7 +39,7 @@ public class UnitPriceFragment extends Fragment {
 
   public static UnitPriceFragment newInstance(UnitPrice[] unitPrices) {
     final Bundle bundle = new Bundle();
-    Parcelable[] parcelables = { Parcels.wrap(unitPrices[0]), Parcels.wrap(unitPrices[1]) };
+    final Parcelable[] parcelables = { Parcels.wrap(unitPrices[0]), Parcels.wrap(unitPrices[1]) };
     bundle.putParcelableArray(ARG_UNIT_PRICES, parcelables);
     final UnitPriceFragment fragment = new UnitPriceFragment();
     fragment.setArguments(bundle);
@@ -67,6 +67,15 @@ public class UnitPriceFragment extends Fragment {
   @Override public void onDestroyView() {
     super.onDestroyView();
     unbinder.unbind();
+  }
+
+  @Override public void onPause() {
+    super.onPause();
+  }
+
+  @Override public void onResume() {
+    super.onResume();
+    updateView();
   }
 
   @OnFocusChange(R.id.net_text_1) void onFocusChangeNet1(UnitPriceEditText view, boolean hasFocus) {

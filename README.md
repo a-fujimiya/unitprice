@@ -4,8 +4,8 @@ Calculate unit price from net weight and price.
 内容量(Net)と値段(Price)から単価(UnitPrice)を求める。
 
 ## Try
-1. Introduce [Butterknife v8.4.0](http://jakewharton.github.io/butterknife/)
-1. Introduce [Perceler v1.0.3](https://github.com/johncarl81/parceler)
+1. Introduce [Butterknife](http://jakewharton.github.io/butterknife/)
+1. Introduce [Perceler](https://github.com/johncarl81/parceler)
 1. Use Parceler and Butterknife at the same time.
  How to describe Butterknife "annotationProcessor" on build.gradle.
 1. How to use PercentRelativeLayout.

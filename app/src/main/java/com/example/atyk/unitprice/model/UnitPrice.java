@@ -33,6 +33,12 @@ import org.parceler.Parcel;
     return unitPrice.toPlainString();
   }
 
+  public void setValues(UnitPrice values) {
+    net = values.net;
+    price = values.price;
+    unitPrice = values.unitPrice;
+  }
+
   public void calculateUnitPrice() {
     if (net.compareTo(BigDecimal.ZERO) != 0) {
       unitPrice = price.multiply(HUNDRED).divide(net, 1, RoundingMode.HALF_UP);

@@ -1,6 +1,7 @@
 package com.example.atyk.unitprice;
 
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -8,10 +9,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import com.example.atyk.unitprice.model.UnitPrice;
 import java.math.BigDecimal;
+import org.parceler.Parcels;
 
 public class MainActivity extends AppCompatActivity
     implements TenkeyFragment.OnClickNumPadListener, UnitPriceFragment.FocusedFrameValueListener {
   private static final String TAG = "MainActivity";
+  private static final String STATE_UNIT_PRICES = "STATE_UNIT_PRICES";
+  private static final String FOCUSED_VALUE = "FOCUSED_VALUE";
   static final int CLEAR = 11;
   static final int ALL_CLEAR = 12;
   static final int CALCULATE = 13;
@@ -34,6 +38,23 @@ public class MainActivity extends AppCompatActivity
     super.onAttachFragment(fragment);
     if (fragment != null && fragment instanceof UnitPriceFragment) {
       unitPriceFragment = (UnitPriceFragment) fragment;
+    }
+  }
+
+  @Override protected void onSaveInstanceState(Bundle outState) {
+    super.onSaveInstanceState(outState);
+    final Parcelable[] parcelables = { Parcels.wrap(unitPrices[0]), Parcels.wrap(unitPrices[1]) };
+    outState.putParcelableArray(STATE_UNIT_PRICES, parcelables);
+    outState.putSerializable(FOCUSED_VALUE, value);
+  }
+
+  @Override protected void onRestoreInstanceState(Bundle savedInstanceState) {
+    super.onRestoreInstanceState(savedInstanceState);
+    final Parcelable[] parcelables = savedInstanceState.getParcelableArray(STATE_UNIT_PRICES);
+    if (parcelables != null) {
+      unitPrices[0].setValues((UnitPrice) Parcels.unwrap(parcelables[0]));
+      unitPrices[1].setValues((UnitPrice) Parcels.unwrap(parcelables[1]));
+      value = (BigDecimal) savedInstanceState.getSerializable(FOCUSED_VALUE);
     }
   }
 
