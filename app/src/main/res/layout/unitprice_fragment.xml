@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -64,20 +65,20 @@
       android:text="@string/unit_price_title"
       style="@style/title_display_area"
       />
-    <TextView
-        android:id="@+id/unit_price_text_1"
-        app:layout_widthPercent="@dimen/display_area_percent"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/price_text_1"
-        android:layout_below="@+id/unit_price_title"
-        style="@style/digit_display_area"
-        />
-    <TextView
-        android:id="@+id/unit_price_text_2"
-        app:layout_widthPercent="@dimen/display_area_percent"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/price_text_2"
-        android:layout_below="@+id/unit_price_text_1"
-        style="@style/digit_display_area"
-        />
+  <TextView
+      android:id="@+id/unit_price_text_1"
+      app:layout_widthPercent="@dimen/display_area_percent"
+      android:layout_height="wrap_content"
+      android:layout_toEndOf="@+id/price_text_1"
+      android:layout_below="@+id/unit_price_title"
+      style="@style/digit_display_area"
+      />
+  <TextView
+      android:id="@+id/unit_price_text_2"
+      app:layout_widthPercent="@dimen/display_area_percent"
+      android:layout_height="wrap_content"
+      android:layout_toEndOf="@+id/price_text_2"
+      android:layout_below="@+id/unit_price_text_1"
+      style="@style/digit_display_area"
+      />
 </android.support.percent.PercentRelativeLayout>

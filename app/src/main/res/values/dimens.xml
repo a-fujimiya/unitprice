@@ -17,5 +17,6 @@
   <item name="edit_area_percent" type="dimen">25%</item>
   <item name="display_area_percent" type="dimen">50%</item>
   <item name="button_width_percent" type="dimen">23%</item>
+  <item name="button_height_percent" type="dimen">22%</item>
   <item name="button_double_width_percent" type="dimen">48%</item>
 </resources>
