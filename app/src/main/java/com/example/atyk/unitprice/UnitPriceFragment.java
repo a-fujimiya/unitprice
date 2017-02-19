@@ -104,6 +104,11 @@ public class UnitPriceFragment extends Fragment {
     if (hasFocus) sendValue(3, view);
   }
 
+  public void changeFocusOnAllClear() {
+    netText1.setFocusableInTouchMode(true);
+    netText1.requestFocus();
+  }
+
   public void updateView() {
     setValues();
   }

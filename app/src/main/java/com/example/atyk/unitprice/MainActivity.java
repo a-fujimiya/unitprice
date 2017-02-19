@@ -63,16 +63,20 @@ public class MainActivity extends AppCompatActivity
     if (num < CLEAR) {
       value = UnitPrice.addInputDigit(value, num);
       setInputValue();
+      unitPriceFragment.updateView();
     } else if (num == CLEAR) {
       clearLastOneDigit();
       setInputValue();
+      unitPriceFragment.updateView();
     } else if (num == ALL_CLEAR) {
       clearAllData();
       calculateUnitPrice();
+      unitPriceFragment.updateView();
+      unitPriceFragment.changeFocusOnAllClear();
     } else if (num == CALCULATE) {
       calculateUnitPrice();
+      unitPriceFragment.updateView();
     }
-    unitPriceFragment.updateView();
   }
 
   @Override public void getFocusedFrameValue(int indicator, String value) {
